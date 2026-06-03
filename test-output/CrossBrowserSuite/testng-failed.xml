@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [CrossBrowserSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="browser" value="Edge"/>
+    <classes>
+      <class name="bstackTestPackage.TC1_Login">
+        <methods>
+          <include name="ValidLogin"/>
+          <include name="browserlaunch"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- bstackTestPackage.TC1_Login -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [CrossBrowserSuite] -->

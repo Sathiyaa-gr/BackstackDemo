@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ParallelSuite" parallel="tests" thread-count="2">
+
+   <test thread-count="5" name="Testing on Chrome">
+        <parameter name="browser" value="Chrome"/>
+        <classes>
+            <class name="bstackTestPackage.TC1_Login"/>
+        </classes>
+    </test>
+       
+   <test thread-count="5" name="Testing on Edge">
+        <parameter name="browser" value="Edge"/>
+        <classes>
+            <class name="bstackTestPackage.TC1_Login"/>
+        </classes>
+    </test>
+
+   </suite>

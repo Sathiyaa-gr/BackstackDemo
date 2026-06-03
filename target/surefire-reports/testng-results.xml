@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="5" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-03T23:09:15 IST" name="Suite" finished-at="2026-06-03T23:10:33 IST" duration-ms="77758">
+    <groups>
+    </groups>
+    <test started-at="2026-06-03T23:09:15 IST" name="IntrgrationTesting" finished-at="2026-06-03T23:10:33 IST" duration-ms="77758">
+      <class name="bstackTestPackage.TC1_Login">
+        <test-method is-config="true" signature="setup()[pri:0, instance:bstackTestPackage.TC1_Login@4562e04d]" started-at="2026-06-03T23:09:15 IST" name="setup" finished-at="2026-06-03T23:09:21 IST" duration-ms="5442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLogin()[pri:0, instance:bstackTestPackage.TC1_Login@4562e04d]" started-at="2026-06-03T23:09:21 IST" name="ValidLogin" finished-at="2026-06-03T23:09:22 IST" duration-ms="1042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bstackTestPackage.TC1_Login@4562e04d]" started-at="2026-06-03T23:09:22 IST" name="tearDown" finished-at="2026-06-03T23:09:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- bstackTestPackage.TC1_Login -->
+      <class name="bstackTestPackage.TC6_RemoveItemCart">
+        <test-method is-config="true" signature="setup()[pri:0, instance:bstackTestPackage.TC6_RemoveItemCart@3c46e67a]" started-at="2026-06-03T23:10:07 IST" name="setup" finished-at="2026-06-03T23:10:20 IST" duration-ms="13137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="RemoveItem()[pri:0, instance:bstackTestPackage.TC6_RemoveItemCart@3c46e67a]" started-at="2026-06-03T23:10:20 IST" name="RemoveItem" finished-at="2026-06-03T23:10:22 IST" duration-ms="2179" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [2] but found []]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [2] but found []
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at bstackPackage.MultipleCart.qty(MultipleCart.java:41)
+at bstackTestPackage.TC6_RemoveItemCart.RemoveItem(TC6_RemoveItemCart.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RemoveItem -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bstackTestPackage.TC6_RemoveItemCart@3c46e67a]" started-at="2026-06-03T23:10:22 IST" name="tearDown" finished-at="2026-06-03T23:10:22 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- bstackTestPackage.TC6_RemoveItemCart -->
+      <class name="bstackTestPackage.TC7_Checkout">
+        <test-method is-config="true" signature="setup()[pri:0, instance:bstackTestPackage.TC7_Checkout@408d971b]" started-at="2026-06-03T23:09:27 IST" name="setup" finished-at="2026-06-03T23:09:47 IST" duration-ms="19368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Checkout()[pri:0, instance:bstackTestPackage.TC7_Checkout@408d971b]" started-at="2026-06-03T23:09:47 IST" name="Checkout" finished-at="2026-06-03T23:09:49 IST" duration-ms="2710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Checkout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bstackTestPackage.TC7_Checkout@408d971b]" started-at="2026-06-03T23:09:49 IST" name="tearDown" finished-at="2026-06-03T23:09:49 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- bstackTestPackage.TC7_Checkout -->
+      <class name="bstackTestPackage.TC4_AddtoCart">
+        <test-method is-config="true" signature="setup()[pri:0, instance:bstackTestPackage.TC4_AddtoCart@557caf28]" started-at="2026-06-03T23:09:22 IST" name="setup" finished-at="2026-06-03T23:09:26 IST" duration-ms="3850" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="AddtoCart()[pri:0, instance:bstackTestPackage.TC4_AddtoCart@557caf28]" started-at="2026-06-03T23:09:26 IST" name="AddtoCart" finished-at="2026-06-03T23:09:27 IST" duration-ms="1619" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddtoCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bstackTestPackage.TC4_AddtoCart@557caf28]" started-at="2026-06-03T23:09:27 IST" name="tearDown" finished-at="2026-06-03T23:09:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- bstackTestPackage.TC4_AddtoCart -->
+      <class name="bstackTestPackage.TC3_LoginwithEmpty">
+        <test-method is-config="true" signature="setup()[pri:0, instance:bstackTestPackage.TC3_LoginwithEmpty@6c6cb480]" started-at="2026-06-03T23:09:49 IST" name="setup" finished-at="2026-06-03T23:10:06 IST" duration-ms="16191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="EmptyLogin()[pri:0, instance:bstackTestPackage.TC3_LoginwithEmpty@6c6cb480]" started-at="2026-06-03T23:10:06 IST" name="EmptyLogin" finished-at="2026-06-03T23:10:07 IST" duration-ms="1323" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Invalid Password] but found [Invalid Username]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Invalid Password] but found [Invalid Username]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at bstackPackage.InvalidCredentials.Error(InvalidCredentials.java:62)
+at bstackTestPackage.TC3_LoginwithEmpty.EmptyLogin(TC3_LoginwithEmpty.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EmptyLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bstackTestPackage.TC3_LoginwithEmpty@6c6cb480]" started-at="2026-06-03T23:10:07 IST" name="tearDown" finished-at="2026-06-03T23:10:07 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- bstackTestPackage.TC3_LoginwithEmpty -->
+      <class name="bstackTestPackage.TC2_Logininvalid">
+        <test-method is-config="true" signature="setup()[pri:0, instance:bstackTestPackage.TC2_Logininvalid@206a70ef]" started-at="2026-06-03T23:10:28 IST" name="setup" finished-at="2026-06-03T23:10:32 IST" duration-ms="3675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="InValidLogin()[pri:0, instance:bstackTestPackage.TC2_Logininvalid@206a70ef]" started-at="2026-06-03T23:10:32 IST" name="InValidLogin" finished-at="2026-06-03T23:10:33 IST" duration-ms="1496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InValidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bstackTestPackage.TC2_Logininvalid@206a70ef]" started-at="2026-06-03T23:10:33 IST" name="tearDown" finished-at="2026-06-03T23:10:33 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- bstackTestPackage.TC2_Logininvalid -->
+      <class name="bstackTestPackage.TC5_MultipleAddtoCart">
+        <test-method is-config="true" signature="setup()[pri:0, instance:bstackTestPackage.TC5_MultipleAddtoCart@c730b35]" started-at="2026-06-03T23:10:22 IST" name="setup" finished-at="2026-06-03T23:10:26 IST" duration-ms="3929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="MultipleCart()[pri:0, instance:bstackTestPackage.TC5_MultipleAddtoCart@c730b35]" started-at="2026-06-03T23:10:26 IST" name="MultipleCart" finished-at="2026-06-03T23:10:28 IST" duration-ms="1739" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MultipleCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:bstackTestPackage.TC5_MultipleAddtoCart@c730b35]" started-at="2026-06-03T23:10:28 IST" name="tearDown" finished-at="2026-06-03T23:10:28 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- bstackTestPackage.TC5_MultipleAddtoCart -->
+    </test> <!-- IntrgrationTesting -->
+  </suite> <!-- Suite -->
+</testng-results>

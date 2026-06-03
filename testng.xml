@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="IntrgrationTesting">
+    <classes>
+      <class name="bstackTestPackage.TC1_Login"/>
+      <class name="bstackTestPackage.TC4_AddtoCart"/>
+      <class name="bstackTestPackage.TC7_Checkout"/>
+      <class name="bstackTestPackage.TC3_LoginwithEmpty"/>
+      <class name="bstackTestPackage.TC6_RemoveItemCart"/>
+      <class name="bstackTestPackage.TC5_MultipleAddtoCart"/>
+      <class name="bstackTestPackage.TC2_Logininvalid"/>
+    </classes>
+  </test> <!-- IntrgrationTesting -->
+</suite> <!-- Suite -->

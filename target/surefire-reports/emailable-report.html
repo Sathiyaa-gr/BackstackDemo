@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">IntrgrationTesting</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">77,758</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">IntrgrationTesting &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">bstackTestPackage.TC3_LoginwithEmpty</td><td><a href="#m0">EmptyLogin</a></td><td rowspan="1">1780508406112</td><td rowspan="1">1323</td></tr><tr class="failedodd"><td rowspan="1">bstackTestPackage.TC6_RemoveItemCart</td><td><a href="#m1">RemoveItem</a></td><td rowspan="1">1780508420576</td><td rowspan="1">2179</td></tr><tr><th colspan="4">IntrgrationTesting &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">bstackTestPackage.TC1_Login</td><td><a href="#m2">ValidLogin</a></td><td rowspan="1">1780508361322</td><td rowspan="1">1042</td></tr><tr class="passedodd"><td rowspan="1">bstackTestPackage.TC2_Logininvalid</td><td><a href="#m3">InValidLogin</a></td><td rowspan="1">1780508432102</td><td rowspan="1">1496</td></tr><tr class="passedeven"><td rowspan="1">bstackTestPackage.TC4_AddtoCart</td><td><a href="#m4">AddtoCart</a></td><td rowspan="1">1780508366219</td><td rowspan="1">1619</td></tr><tr class="passedodd"><td rowspan="1">bstackTestPackage.TC5_MultipleAddtoCart</td><td><a href="#m5">MultipleCart</a></td><td rowspan="1">1780508426686</td><td rowspan="1">1739</td></tr><tr class="passedeven"><td rowspan="1">bstackTestPackage.TC7_Checkout</td><td><a href="#m6">Checkout</a></td><td rowspan="1">1780508387209</td><td rowspan="1">2710</td></tr></tbody>
+</table>
+<h2>IntrgrationTesting</h2><h3 id="m0">bstackTestPackage.TC3_LoginwithEmpty#EmptyLogin</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Invalid Password] but found [Invalid Username]
+	at bstackPackage.InvalidCredentials.Error(InvalidCredentials.java:62)
+	at bstackTestPackage.TC3_LoginwithEmpty.EmptyLogin(TC3_LoginwithEmpty.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">bstackTestPackage.TC6_RemoveItemCart#RemoveItem</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [2] but found []
+	at bstackPackage.MultipleCart.qty(MultipleCart.java:41)
+	at bstackTestPackage.TC6_RemoveItemCart.RemoveItem(TC6_RemoveItemCart.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 35 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">bstackTestPackage.TC1_Login#ValidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">bstackTestPackage.TC2_Logininvalid#InValidLogin</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">bstackTestPackage.TC4_AddtoCart#AddtoCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">bstackTestPackage.TC5_MultipleAddtoCart#MultipleCart</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">bstackTestPackage.TC7_Checkout#Checkout</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
